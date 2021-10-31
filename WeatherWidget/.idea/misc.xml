@@ -3,10 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/card_back.xml" value="0.28229166666666666" />
-        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/ic_search.xml" value="0.2994791666666667" />
-        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/layout/activity_main.xml" value="0.3605072463768116" />
-        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/layout/weather_rv_item.xml" value="0.33" />
+        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/btn_bg6.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/card_back.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/layout/activity_main.xml" value="0.1852355072463768" />
         <entry key="..\:/Users/HaiNguyen2/Desktop/appMobi/AndroidProject/WeatherWidget/app/src/main/res/layout/activity_main.xml" value="0.3401268115942029" />
       </map>
     </option>
