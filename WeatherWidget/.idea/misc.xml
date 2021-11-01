@@ -3,11 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/drawable/btn_bg6.xml" value="0.275" />
-        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/drawable/card_back.xml" value="0.275" />
-        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/drawable/ic_search.xml" value="0.275" />
-        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/layout/activity_main.xml" value="0.1787037037037037" />
-        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/layout/weather_rv_item.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Admins/OneDrive/Desktop/AndroidProject/WeatherWidget/app/src/main/res/drawable/card_back.xml" value="0.28888888888888886" />
         <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/btn_bg6.xml" value="0.22864583333333333" />
         <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/drawable/card_back.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/HaiNguyen2/Desktop/Sping2021/appMobi/AndroidProject/WeatherWidget/app/src/main/res/layout/activity_main.xml" value="0.1852355072463768" />
@@ -20,12 +16,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.1787037037037037" />
-      </ProjectState>
-    </option>
   </component>
 </project>

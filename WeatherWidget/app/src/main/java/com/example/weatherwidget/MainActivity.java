@@ -172,8 +172,8 @@ public class MainActivity extends AppCompatActivity {
                         Picasso.get().load("https://images.unsplash.com/photo-1496483353456-90997957cf99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=685&q=80").into(backIV);
                     }
                     JSONObject forecastObj = response.getJSONObject("forecast");
-                    JSONObject forecast0 =  forecastObj.getJSONArray("forecastDay").getJSONObject(0);
-                    JSONArray hourArray = forecast0.getJSONArray("hour");
+                    JSONObject forcast0 =  forecastObj.getJSONArray("forecaseDay").getJSONObject(0);
+                    JSONArray hourArray = forcast0.getJSONArray("hour");
 
                     for (int i = 0; i< hourArray.length(); i++){
                         JSONObject hourObj = hourArray.getJSONObject(i);
