@@ -71,7 +71,6 @@ public class CityFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -94,7 +93,9 @@ public class CityFragment extends Fragment {
         loading = itemView.findViewById(R.id.loading);
 
         searchBar = itemView.findViewById(R.id.searchBar);
+
         searchBar.setEnabled(false);
+        weather_panel.setVisibility(View.INVISIBLE);
 
         new LoadCity().execute();
         return itemView;
@@ -109,7 +110,6 @@ public class CityFragment extends Fragment {
                 StringBuilder builder = new StringBuilder();
                 InputStream is = getResources().openRawResource(R.raw.city_list);
                 GZIPInputStream gzipInputStream = new GZIPInputStream(is);
-
                 InputStreamReader reader = new InputStreamReader(gzipInputStream);
                 BufferedReader in = new BufferedReader(reader);
 
@@ -144,8 +144,6 @@ public class CityFragment extends Fragment {
                             suggest.add(search);
                         }
                     }
-                    searchBar.setLastSuggestions(list);
-                    loading.setVisibility(View.GONE);
                 }
 
                 @Override
@@ -170,6 +168,9 @@ public class CityFragment extends Fragment {
 
                 }
             });
+            searchBar.setLastSuggestions(list);
+
+            loading.setVisibility(View.GONE);
         }
     }
 

@@ -18,15 +18,16 @@
 </com.mancj.materialsearchbar.MaterialSearchBar>
 
     <FrameLayout
-        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible">
 
         <LinearLayout
             android:id="@+id/weather_panel"
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
             <TextView
@@ -153,9 +154,9 @@
 
         <ProgressBar
             android:id="@+id/loading"
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:indeterminate="true" />
     </FrameLayout>
 

@@ -15,7 +15,6 @@ import android.util.Log;
 
 import com.example.weatherwidget.Adapter.ViewPagerAdapter;
 import com.example.weatherwidget.Common.Common;
-import com.example.weatherwidget.Model.Main;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
