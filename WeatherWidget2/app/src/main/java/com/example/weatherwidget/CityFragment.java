@@ -46,7 +46,7 @@ public class CityFragment extends Fragment {
     private List<String> listCity;
     private MaterialSearchBar searchBar;
     ImageView img_weather;
-    TextView cityName, temperature, wind, pressure, humidity, description, datetime, cloud;
+    TextView cityName, temperature, wind, pressure, humidity, description, datetime, cloud, minTemperature, maxTemperature, feelsLike;
     LinearLayout weather_panel;
     ProgressBar loading;
     CompositeDisposable compositeDisposable;
@@ -88,7 +88,9 @@ public class CityFragment extends Fragment {
         description = itemView.findViewById(R.id.txt_description);
         datetime = itemView.findViewById(R.id.txt_date_time);
         cloud = itemView.findViewById(R.id.txt_cloud);
-
+        minTemperature = itemView.findViewById(R.id.txt_minTemperature);
+        maxTemperature = itemView.findViewById(R.id.txt_maxTemperature);
+        feelsLike = itemView.findViewById(R.id.txt_feelsLike);
         weather_panel = itemView.findViewById(R.id.weather_panel);
         loading = itemView.findViewById(R.id.loading);
 
@@ -194,6 +196,18 @@ public class CityFragment extends Fragment {
                                 .append(weatherResult.getWeather().get(0).getDescription()));
                         temperature.setText(new StringBuilder(String.valueOf(weatherResult
                                 .getMain().getTemp()))
+                                .append("°C").toString());
+                        minTemperature.setText(new StringBuilder("Min Temperature: ")
+                                .append(weatherResult
+                                        .getMain().getTemp_min())
+                                .append("°C").toString());
+                        maxTemperature.setText(new StringBuilder("Max Temperature: ")
+                                .append(weatherResult
+                                        .getMain().getTemp_max())
+                                .append("°C").toString());
+                        feelsLike.setText(new StringBuilder("Feels like: ")
+                                .append(weatherResult
+                                        .getMain().getFeels_like())
                                 .append("°C").toString());
                         datetime.setText(Common.convertUnixToDate(weatherResult.getDt()));
                         wind.setText(new StringBuilder("Speed: ")

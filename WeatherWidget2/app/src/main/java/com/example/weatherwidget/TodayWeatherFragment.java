@@ -96,21 +96,21 @@ public class TodayWeatherFragment extends Fragment {
                                 .append(weatherResult.getName()).toString());
                         cloud.setText(new StringBuilder(weatherResult.getWeather().get(0).getMain())
                                 .append(": ")
-                        .append(weatherResult.getWeather().get(0).getDescription()));
+                                .append(weatherResult.getWeather().get(0).getDescription()));
                         temperature.setText(new StringBuilder(String.valueOf(weatherResult
                                 .getMain().getTemp()))
                                 .append("°C").toString());
                         minTemperature.setText(new StringBuilder("Min Temperature: ")
                                 .append(weatherResult
-                                .getMain().getTemp_min())
+                                        .getMain().getTemp_min())
                                 .append("°C").toString());
                         maxTemperature.setText(new StringBuilder("Max Temperature: ")
                                 .append(weatherResult
-                                .getMain().getTemp_max())
+                                        .getMain().getTemp_max())
                                 .append("°C").toString());
                         feelsLike.setText(new StringBuilder("Feels like: ")
                                 .append(weatherResult
-                                .getMain().getFeels_like())
+                                        .getMain().getFeels_like())
                                 .append("°C").toString());
                         datetime.setText(Common.convertUnixToDate(weatherResult.getDt()));
                         wind.setText(new StringBuilder("Speed: ")
@@ -121,7 +121,7 @@ public class TodayWeatherFragment extends Fragment {
                                 .append(weatherResult.getWind().getGust())
                                 .toString());
                         pressure.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getPressure()))
-                        .append(" hpa").toString());
+                                .append(" hpa").toString());
                         humidity.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getHumidity()))
                                 .append("%").toString());
 

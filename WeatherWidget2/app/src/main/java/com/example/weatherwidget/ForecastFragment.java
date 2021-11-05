@@ -63,7 +63,7 @@ public class ForecastFragment extends Fragment {
 
         cityName = itemView.findViewById(R.id.txt_city_name);
 
-        recycler_forecast = itemView.findViewById(R.id.recycler_forecast);
+        recycler_forecast = (RecyclerView) itemView.findViewById(R.id.recycler_forecast);
         recycler_forecast.setHasFixedSize(true);
         recycler_forecast.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
 
